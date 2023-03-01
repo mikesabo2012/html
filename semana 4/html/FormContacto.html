@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header>
+        <img src="../img/incap.png" alt="" width="100" height="100">
+        <h1>FORMULARIO Y LISTAS HTML</h1>
+        </header>
+        <nav>
+        <ul>
+            <li>Home</li>
+            <li>Productos</li>
+            <li>Servicios</li>
+            <li>Contactos</li>
+        </ul>    
+        </nav>
+        <section>
+            <form action="datos.php" method="post">
+                <!--sección de filsed  -->
+                <fieldset>
+                    <!-- seccion ingreso de nombre -->
+                    <label for="">Nombre Completo</label>
+                    <input type="text" name="Nombre" placeholder="&#9756; Ingrese Su Nombre" required>
+                    <br><br>
+                    <!-- sección email -->
+                    <label for="">email</label>
+                    <input name="email" type="email" placeholder="&#9874; Ingrese Su Email">
+                    <br><br>
+                     <!--seccion Contraseña  -->
+                     <label for="">Contraseña</label>
+                     <input type="password" name="Contraseña" placeholder="&#9745; Ingrese Su Contraseña" required>
+                     <br><br>
+                     <!-- Seccion Hobbies -->
+                     <label for="">Selecciona Tus Hobbies:</label>
+                     <br>
+                     <input name="Cine" type="checkbox">Cine<br>
+                     <input name="Lectura" type="checkbox">Lectura<br>
+                     <input name="Deporte" type="checkbox">Deporte<br>
+                     <br>
+                     <!-- Estado Civil -->
+                     <label for="">Estado Civil</label><br>
+                     <input name="Estado Civil" type="radio">Casado(a)<br>
+                     <input name="Estado Civil" type="radio">Solrter(a)<br>
+                     <input name="Estado Civil" type="radio">Viudo(a)<br>
+                     <br><br>
+                     <!-- Seccion De Opcion Lista -->
+                     <label for="">Programas Tecnicos</label>
+                     <select name="select" id="">
+                        <option>Seleccone Programa...</option>
+                        <option>Sistemas</option>
+                        <option>Diseño Grafico</option>
+                        <option>Contabilidad</option>
+                     </select>
+                     <br><br>
+                     <!-- Seccion Comentarios -->
+                     <label for="">Tu Comentario</label><br>
+                     <textarea name="mensaje" id="" cols="40" rows="5"></textarea>
+                    </fieldset>
+                    <br><br>
+                    <hr>
+                    <!-- Seccion Botones   Form-->
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Cancelar</button>
+                    <br><br>
+            </form>
+        </section>
+        <!-- Seccion Pie De Pagina -->
+        <footer>
+            <p>Derechos Reservados &copy;2023&#64; Michael Sabogal</p>
+        </footer>
+</body>
+</html>
